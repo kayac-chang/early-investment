@@ -35,7 +35,7 @@ export default () =>
         },
         options: {
             onResize,
-            barThickness: 30,
+            maxBarThickness: 30,
             indexAxis: "y",
             scales: {
                 x: {
