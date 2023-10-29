@@ -6,12 +6,4 @@ export default defineConfig(() => ({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
-  build: {
-    rollupOptions: {
-      input: {
-        main: '/main.js',
-        'early-investment': '/early-investment.html',
-      },
-    },
-  },
 }))
