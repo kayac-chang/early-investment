@@ -2,6 +2,7 @@ import Chart from "chart.js/auto";
 
 // 改變圖表文字大小
 export default (chart) => {
+    console.log(chart)
     const windowWidth = window.innerWidth;
     let fontSize;
     if (windowWidth >= 768 && windowWidth < 1440) {
