@@ -37,6 +37,16 @@ export default () =>
             onResize,
             maxBarThickness: 30,
             indexAxis: "y",
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        label: (context) => {
+                            context.formattedValue =
+                                context.dataset.datalabels.formatter(Number(context.formattedValue))
+                        },
+                    }
+                }
+            },
             scales: {
                 x: {
                     ticks: {
